@@ -38,3 +38,7 @@
  	(replace-match "'")
  	))
 
+(defun stub ()
+  "Some stubbed-out function."
+  (interactive)
+  (do-some-stuff))
