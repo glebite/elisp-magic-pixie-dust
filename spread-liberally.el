@@ -42,3 +42,42 @@
   "Some stubbed-out function."
   (interactive)
   (do-some-stuff))
+
+(defun create ()
+  "Create simple test case."
+  (interactive)
+  (insert "def test_(<tbd>)\n")
+  (insert "\t\"\"\"\n")
+  (insert "\t\"\"\"\n")
+  (insert "\t@<tbd>\n")
+  (insert "\tdef wrapped(<tbd>)\n")
+  (insert "\t\t# code goes here....\n")
+  (insert "\t\treturn\n")
+  (insert "\treturn wrapped()\n\n")
+  )
+
+(defun create_tcmp ()
+  "Create simple test case."
+  (interactive)
+  (insert "def test_(ipaddr, port, platform)\n")
+  (insert "\t\"\"\"\n")
+  (insert "\t\"\"\"\n")
+  (insert "\t@connnect.configureTCMP(impaddr, port, platform)\n")
+  (insert "\tdef wrapped(tcmpMsg, tcmpResp, ....)\n")
+  (insert "\t\t# code goes here....\n")
+  (insert "\t\treturn\n")
+  (insert "\treturn wrapped()\n\n")
+  )
+
+(defun create_console ()
+  "Create simple test case."
+  (interactive)
+  (insert "def test_(piipaddr, port, platform)\n")
+  (insert "\t\"\"\"\n")
+  (insert "\t\"\"\"\n")
+  (insert "\t@console.configureConsole(piipaddr, port, platform)\n")
+  (insert "\tdef wrapped(conn)\n")
+  (insert "\t\t# code goes here....\n")
+  (insert "\t\treturn\n")
+  (insert "\treturn wrapped()\n\n")
+  )
